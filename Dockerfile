@@ -1,5 +1,6 @@
 FROM nginx:stable-alpine
 LABEL maintainer="javi.corbin@gmail.com"
+LABEL tileboarddate="20200813"
 
 RUN apk add --no-cache --virtual .build-deps git && \
     rm -rf /var/www/html/* && \
